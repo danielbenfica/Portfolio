@@ -1,0 +1,15 @@
+.experiences{
+  height: auto;
+}
+.titleExperience{
+  margin: 1.5rem 1.5rem 0.2rem; 
+}
+.experiences ul li{
+  margin: 1rem;
+}
+.experiences ul li dt{
+  font-weight: bold;
+}
+.experiences ul li dd{
+  font-size: 14px;
+}

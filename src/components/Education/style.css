@@ -1,0 +1,16 @@
+.education{
+  height: auto;
+}
+.titleEducation{
+  margin: 1.5rem 1.5rem 0.2rem; 
+}
+
+.education ul li{
+  margin: 1rem;
+}
+.education ul li dt{
+  font-weight: bold;
+}
+.education ul li dd{
+  font-size: 14px;
+}

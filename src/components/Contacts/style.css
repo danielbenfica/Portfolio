@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500&display=swap');
+.contacts{
+  background-color: var(--bg-cards);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 20px;
+  align-items: center;
+}
+.contacts ul{
+  padding: 0; 
+}
+.contacts ul li{
+  list-style: none;
+  margin: .8rem 0;
+}
+.contacts ul li a, .contacts ul li{
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  gap: .8rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}

@@ -1,0 +1,34 @@
+.contentImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.imageProfilePosts{
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  border: solid #00FF00 2px;
+}
+.posts{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.titlePost{
+  font-size: 18px;
+}
+.datePost, .tagTech{
+  font-size: 14px;
+}
+.datePost{
+  margin-bottom: 2rem;
+}
+.messagePost{
+  font-size: 16px;
+}
+.relatedTags{
+  display: flex;
+  justify-content: space-between;
+}
