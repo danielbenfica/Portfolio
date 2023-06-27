@@ -13,6 +13,10 @@ function Tecnologys() {
         <div className="row">
           <p className='tecnology'>CSS</p>
           <p className='tecnology'>HTML</p>
+          <p className='tecnology'>TAILWIND</p>
+        </div>
+        <div className="row">
+          <p className='tecnology'>TYPESCRIPT</p>
         </div>
       </div>
     </article>

@@ -5,13 +5,13 @@ import "./style.css"
 
 import CardProject from "./ComponentCardProject"
 
-function MyProjects(){
+function MyProjects(props){
   const [repositorys, setRepositorys] = useState([])
 
   useEffect(() => {
 
     async function getRepository(){
-      const urlAPI = "https://api.github.com/users/gabrielfroes/repos"
+      const urlAPI = props.urlApi + "repos"
       const response = await axios.get(urlAPI)
       setRepositorys(response.data)
     }

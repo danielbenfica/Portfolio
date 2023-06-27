@@ -11,14 +11,14 @@ import twitter from '../../assets/image/assets/twitter.svg'
 import globe from '../../assets/image/assets/globe.svg'
 import mail from '../../assets/image/assets/mail.svg'
 
-function Contacts() {
+function Contacts(props) {
   const [dataContacts, setDataContacts] = useState([])
 
   useEffect(() => {
+    const urlApi = props.urlApi
 
-    const urlAPI = "https://api.github.com/users/MarceloBenfica"
     async function getDataProfile(){
-      const response = await axios.get(urlAPI)
+      const response = await axios.get(urlApi)
       setDataContacts(response.data)
     }
     

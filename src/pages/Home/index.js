@@ -10,6 +10,7 @@ import Topics from "../../components/Topics";
 import MyProjects from "../../components/MyProjects";
 
 function Home() {
+  const urlApi = "https://api.github.com/users/danielbenfica/"
  /* const [pokemons, setPokemon] = useState([]);
   const [searchPokemon, setSearchPokemon] = useState('');
 
@@ -44,13 +45,13 @@ function Home() {
     <>
       <article className="container">
         <div className="lateralBar">
-          <Profile />
-          <Contacts />
+          <Profile urlApi={urlApi} />
+          <Contacts urlApi={urlApi}/>
           <Tecnologys />
         </div>
         <main className="content">
           <Topics title={"My Projects"}/>
-          <MyProjects />
+          <MyProjects urlApi={urlApi} />
         </main>
       </article>
     </>

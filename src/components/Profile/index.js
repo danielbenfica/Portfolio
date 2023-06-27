@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
 import './style.css'
 import axios from 'axios';
-function Profile() {
+function Profile(props) {
   const [dataProfile, setDataProfile] = useState([])
 
   useEffect(() => {
 
-    const urlAPI = "https://api.github.com/users/MarceloBenfica"
+    const urlApi = props.urlApi
+
     async function getDataProfile(){
-      const response = await axios.get(urlAPI)
+      const response = await axios.get(urlApi)
       setDataProfile(response.data)
     }
     
